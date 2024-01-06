@@ -12,6 +12,7 @@ const searchBox = document.querySelector("#search-box");
 
 // ketika search icon di klik
 document.querySelector("#search-button").onclick = (e) => {
+  debugger;
   searchForm.classList.toggle("active");
   searchBox.focus();
   e.preventDefault();
@@ -38,7 +39,7 @@ document.addEventListener("click", function (e) {
     searchForm.classList.remove("active");
   }
   if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
-    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
   }
 });
 
